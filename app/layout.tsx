@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
+import { SiteHeader } from '@/components/SiteHeader'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,10 +23,14 @@ export default function RootLayout({
           attribute='class'
           defaultTheme='system'
           enableSystem
-          themes={['light', 'dark', 'blue']}
+          themes={['light', 'dark', 'blue', 'green', 'orange']}
           disableTransitionOnChange
         >
-          {children}
+          <div className='relative flex min-h-screen flex-col bg-background'>
+            <SiteHeader />
+            <main className='flex-1'>{children}</main>
+            {/* <SiteFooter /> */}
+          </div>
         </ThemeProvider>
       </body>
     </html>

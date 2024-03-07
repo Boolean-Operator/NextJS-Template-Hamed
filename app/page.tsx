@@ -20,14 +20,13 @@ import { ThemeToggle } from '@/components/ui/theme-toggle'
 
 export default function Home() {
   return (
-    <section className='py-24'>
-      <div className='container'>
-        <header className='sticky top-0 z-50 w-full border-b'>
-          <div className='container flex h-14 max-w-screen-2xl items-center justify-between'>
-            <h1 className='text-3xl font-bold'>Next TS Theme Starter</h1>
-            <ThemeToggle />
-          </div>
-        </header>
+    <section className='py-2'>
+      <div className='container relative'>
+        {/* <header className='sticky top-0 z-50 w-full border-b'> */}
+        {/* <div className='container flex h-14 max-w-screen-2xl items-center justify-between'> */}
+        <h1 className='text-3xl font-bold'>Next TS Theme Starter</h1>
+        {/* </div> */}
+        {/* </header> */}
 
         <Card className='mt-12 w-[350px]'>
           <CardHeader>
